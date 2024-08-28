@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="16dp"
+        android:scrollbarStyle="outsideInset">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dip">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:text="@string/date"/>
+        <DatePicker
+            android:id="@+id/dpDate"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mood"/>
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radiogroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <RadioButton android:id="@+id/radio_awesome"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ic_awesome"
+                android:layout_width="wrap_content"
+                android:background="@drawable/mood_selector" />
+            <RadioButton android:id="@+id/radio_happy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ic_happy"
+                android:background="@drawable/mood_selector"/>
+            <RadioButton android:id="@+id/radio_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ic_good"
+                android:background="@drawable/mood_selector"/>
+            <RadioButton android:id="@+id/radio_neutral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ic_neutral"
+                android:background="@drawable/mood_selector"/>
+        </RadioGroup>
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radiogroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <RadioButton android:id="@+id/radio_moody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ic_moody"
+                android:background="@drawable/mood_selector"/>
+            <RadioButton android:id="@+id/radio_sad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ic_sad"
+                android:background="@drawable/mood_selector"/>
+            <RadioButton android:id="@+id/radio_terrible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ic_terrible"
+                android:background="@drawable/mood_selector"/>
+            <RadioButton android:id="@+id/radio_sick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ic_sick"
+                android:background="@drawable/mood_selector"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goals_tv"/>
+        <TextView
+            android:id="@+id/nogoals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No achievable goals in the database"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:id="@+id/ll_checkboxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/positive_things"/>
+        <EditText
+            android:id="@+id/etPositiveThings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:text="@string/negative_things"/>
+        <EditText
+            android:id="@+id/etNegativeThings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:text="@string/thoughts"/>
+        <EditText
+            android:id="@+id/etThoughts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_marginTop="16dp"
+            android:id="@+id/addImage"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addPhoto"/>
+        <ImageView
+            android:id="@+id/IVPreviewImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="128dp"/>
+    </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="36dp"
+        android:layout_gravity="bottom|left"
+        android:text="@string/save_button"
+        app:icon="@drawable/ic_baseline_done_24"/>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="36dp"
+        android:layout_gravity="bottom|right"
+        android:text="@string/cancel_button"
+        app:icon="@drawable/ic_baseline_cancel_24"/>
+</FrameLayout>

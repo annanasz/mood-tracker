@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">MOOOOd</string>
+    <string name="entries">Daily Entries</string>
+    <string name="calendar">Calendar</string>
+    <string name="charts">Charts</string>
+    <string name="goals">Goals</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_calendar_fragment">Calendar</string>
+    <string name="hello_chart_fragment">Charts</string>
+    <string name="hello_entries_fragment">entries</string>
+    <string name="hello_goals_fragment">goals</string>
+    <string name="positive_things">Positive things:</string>
+    <string name="negative_things">Negative things:</string>
+    <string name="date">Date:</string>
+    <string name="SelectDate">Select Date</string>
+    <string name="save_button">Save</string>
+    <string name="mood">Today\'s mood</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="goalname">Title:</string>
+    <string name="new_goal">New Goal</string>
+    <string name="goaldescription">Description:</string>
+    <string name="button_ok">Done</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="goalcategory">Category:</string>
+    <string name="goals_tv">I got closer to these goals:</string>
+    <string name="thoughts">Thoughts:</string>
+    <string name="dateplaceholder">Date</string>
+    <string name="moodplaceholder">MOOD:</string>
+    <string name="goalsplaceholder">Goals:</string>
+    <string name="no_goals_for_this_day">No goals for this day</string>
+    <string name="addPhoto">Add Image</string>
+    <string name="entryimage">Image:</string>
+    <string name="title_notification_reminder">MOOD</string>
+    <string name="description_notification_reminder">Vedd fel a mai napi bejegyzesed!</string>
+    <string name="reminders_notification_channel_id">150</string>
+    <string name="reminders_notification_channel_name">channelname</string>
+    <string-array name="goal_category_items">
+        <item>Lifestyle</item>
+        <item>Selfcare</item>
+        <item>Studies</item>
+        <item>Health</item>
+        <item>Financial</item>
+        <item>Other</item>
+    </string-array>
+</resources>
